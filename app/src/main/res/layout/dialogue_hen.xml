@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/darkgrey"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="120dp"
+            android:src="@drawable/drawablewishlist"
+            android:id="@+id/wishlistbtn"/>
+
+
+        <TextView
+            android:id="@+id/dialoguebreedname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:text="Breed Name"
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/dialoguecost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/drawablerupee"
+            android:text="Cost Price"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+
+        <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="View"-->
+        <!--android:drawableBottom="@drawable/ic_remove_red_eye_black_24dp"-->
+        <!--android:background="@color/colorWhite"/>-->
+
+        <Button
+            android:id="@+id/chikenirrodview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite"
+            android:drawableRight="@drawable/ic_remove_red_eye_black_24dp"
+            android:paddingLeft="120dp"
+            android:paddingRight="115dp"
+            android:text="View" />
+
+        <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Buy"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--android:drawableBottom="@drawable/ic_shopping_cart_black_24dp"-->
+        <!--android:background="@color/darkpink"/>-->
+
+        <Button
+            android:id="@+id/chikenirrodbuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkpink"
+            android:drawableRight="@drawable/ic_shopping_cart_black_24dp"
+            android:paddingLeft="120dp"
+            android:paddingRight="115dp"
+            android:text="Buy"
+            android:textColor="@color/colorWhite" />
+
+
+    </LinearLayout>
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="120dp"-->
+        <!--android:src="@drawable/poultryopenerpage"-->
+        <!--android:padding="10dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:id="@+id/dialoguebreedhenimg"/>-->
+
+
+    <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="120dp"-->
+        <!--android:src="@drawable/poultryopenerpage"-->
+        <!--android:padding="10dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:id="@+id/dialoguebreedhenimg"-->
+        <!--app:civ_border_color="#000000"-->
+        <!--app:civ_border_width="1.5dp"-->
+        <!--app:civ_shadow="true"-->
+        <!--app:civ_shadow_radius="10"-->
+        <!--app:civ_shadow_color="#8BC34A"/>-->
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/poultryopenerpage"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/dialoguebreedhenimg"
+        app:civ_border_color="#000000"
+        app:civ_border_width="1.5dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="10"/>
+
+</RelativeLayout>

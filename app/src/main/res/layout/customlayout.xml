@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:srcCompat="@mipmap/ic_launcher"/>-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:background="@drawable/chickenbreedicons"-->
+        <!--app:srcCompat="@drawable/chickenlogo"/>-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:background="@drawable/chickenbreedicons"/>-->
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/chickenlogo"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/textViewkori"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/listviewcustomize"
+        android:layout_toRightOf="@+id/imageView"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="TextView" />
+</RelativeLayout>

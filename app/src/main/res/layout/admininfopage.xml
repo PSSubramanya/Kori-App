@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/adminicon"
+        android:src="@drawable/adminiconround"/>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adminicon"
+        android:layout_centerHorizontal="true"
+        android:text="ADMIN"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:id="@+id/admintextview"/>
+
+    <EditText
+        android:id="@+id/textViewAdmin"
+        android:layout_below="@+id/admintextview"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/borderdesign"
+        android:hint="UserName" />
+
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/textViewAdminpass"
+        android:layout_below="@+id/textViewAdmin"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/borderdesign"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:paddingLeft="10dp"
+        android:hint="Password" />
+
+
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Verify"
+        android:gravity="center"
+        android:background="#FF5474"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/textViewAdminpass"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/adminbtn"/>
+
+
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:text="Cancel"
+        android:gravity="center"
+        android:background="@drawable/borderpink"
+        android:textColor="#FF5474"
+        android:layout_below="@+id/adminbtn"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/cancelad"/>
+
+    <!--<EditText-->
+    <!--android:id="@+id/textViewDate"-->
+    <!--android:layout_marginLeft="40dp"-->
+    <!--android:layout_width="230dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Date" />-->
+
+    <!--<DatePicker-->
+    <!--android:id="@+id/textViewDate"-->
+    <!--android:layout_width="230dp"-->
+    <!--android:layout_height="91dp"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:hint="Date" />-->
+</RelativeLayout>

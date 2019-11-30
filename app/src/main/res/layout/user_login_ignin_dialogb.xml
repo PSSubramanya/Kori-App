@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkgrey"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:id="@+id/id1">
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="LOGIN"
+            android:layout_gravity="left"
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp"
+            android:background="@drawable/loginsignupborder"
+            android:textStyle="bold"
+            android:id="@+id/logintext"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="SIGNUP"
+            android:layout_gravity="left"
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp"
+            android:background="@color/darkblueb"
+            android:textStyle="bold"
+            android:id="@+id/signuptext"/>
+
+        <!--<Button-->
+        <!--android:id="@+id/chikenirrodview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:background="@color/colorWhite"-->
+        <!--android:drawableRight="@drawable/ic_remove_red_eye_black_24dp"-->
+        <!--android:paddingLeft="120dp"-->
+        <!--android:paddingRight="115dp"-->
+        <!--android:text="View" />-->
+
+        <!---->
+
+        <!--<Button-->
+        <!--android:id="@+id/chikenirrodbuy"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/darkpink"-->
+        <!--android:drawableRight="@drawable/ic_shopping_cart_black_24dp"-->
+        <!--android:paddingLeft="120dp"-->
+        <!--android:paddingRight="115dp"-->
+        <!--android:text="Buy"-->
+        <!--android:textColor="@color/colorWhite" />-->
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/id1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"/>
+
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:background="@drawable/loginsignupborderc"
+            android:textColor="#000000"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Address"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:background="@drawable/loginsignupborderc"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/loginbtnborder"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/lgbtn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:layout_marginTop="-48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="end"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/cancelbtnborder"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

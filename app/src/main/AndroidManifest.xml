@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.poultrysalesapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Registration_Form"></activity>
+        <activity android:name=".ImageAndVideoViewerPage" />
+        <activity android:name=".FragmentGridType3" />
+        <activity android:name=".FragmentGridType2" />
+        <activity android:name=".FragmentGridType1" />
+        <activity android:name=".ChickenBreedPage3" />
+        <activity android:name=".UserLoginOrRegisterDialogue" /> <!-- <activity android:name=".FragmentType1"></activity> -->
+        <activity android:name=".ChickenBreedPage2" />
+        <activity android:name=".ShowChickenImage" />
+        <activity android:name=".ViewAndSellChickenPage" />
+        <activity android:name=".AdminChickenBreedAdd" />
+        <activity android:name=".OordaKori" />
+        <activity android:name=".SalemBreed" />
+        <activity android:name=".IrrodBreed" />
+        <activity android:name=".EggsBreedViewPage" />
+        <activity android:name=".ChickenBreedsViewPage" />
+        <activity android:name=".ChoicePage" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

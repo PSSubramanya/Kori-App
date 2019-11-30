@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/vidrl"
+    android:background="@color/darkgrey"
+    tools:context=".ImageAndVideoViewerPage">
+
+
+    <!--<androidx.recyclerview.widget.RecyclerView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="210dp"-->
+        <!--android:id="@+id/horizrecyclerview"-->
+        <!--android:orientation="horizontal">-->
+
+    <!--</androidx.recyclerview.widget.RecyclerView>-->
+
+
+    <!--<androidx.core.widget.NestedScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:scrollbars="none">-->
+
+        <!--<androidx.recyclerview.widget.RecyclerView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="210dp"-->
+            <!--android:id="@+id/horizrecyclerview"-->
+            <!--android:orientation="horizontal">-->
+
+        <!--</androidx.recyclerview.widget.RecyclerView>-->
+
+        <!--<FrameLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/horizrecyclerview">-->
+
+            <!--<VideoView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/videoview"/>-->
+
+        <!--</FrameLayout>-->
+    <!--</androidx.core.widget.NestedScrollView>-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:id="@+id/horizrecyclerview"
+        android:orientation="horizontal">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap on the Video to see the option!"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@+id/horizrecyclerview"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        android:id="@+id/textPlaceholder"/>
+
+
+    <FrameLayout
+        android:layout_width="281dp"
+        android:layout_height="500dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textPlaceholder">
+
+        <VideoView
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/videoview"/>
+
+    </FrameLayout>
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/horizrecyclerview">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtPlaceholder"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_above="@+id/videoview"-->
+            <!--android:layout_below="@+id/horizrecyclerview"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_margin="16dp"-->
+            <!--android:text="DOUBLE TAP TO VIEW CONTROLS"-->
+            <!--android:textStyle="bold" />-->
+
+        <!--<VideoView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:id="@+id/videoview"/>-->
+
+
+    <!--</RelativeLayout>-->
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/txtPlaceholder"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/videoview"-->
+        <!--android:layout_below="@+id/horizrecyclerview"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_margin="16dp"-->
+        <!--android:text="DOUBLE TAP TO VIEW CONTROLS"-->
+        <!--android:textStyle="bold" />-->
+
+    <!--<VideoView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_below="@+id/txtPlaceholder"-->
+        <!--android:id="@+id/videoview"/>-->
+
+
+
+</RelativeLayout>

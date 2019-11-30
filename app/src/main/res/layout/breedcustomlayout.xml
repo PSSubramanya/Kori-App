@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageView"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:srcCompat="@mipmap/ic_launcher"/>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageView"-->
+    <!--android:layout_width="70dp"-->
+    <!--android:layout_height="70dp"-->
+    <!--android:background="@drawable/chickenbreedicons"-->
+    <!--app:srcCompat="@drawable/chickenlogo"/>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageView"-->
+    <!--android:layout_width="70dp"-->
+    <!--android:layout_height="70dp"-->
+    <!--android:background="@drawable/chickenbreedicons"/>-->
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:id="@+id/BreedchickenimageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/chickenlogo"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/rupees"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/BreedchickenimageView"
+        android:layout_above="@+id/textViewkorinames"
+        android:gravity="left"
+        android:textSize="15dp"
+        android:text="Rs." />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/textViewkoriprice"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/rupees"
+        android:gravity="left"
+        android:textSize="15dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewkorinames"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/textViewkoriprice"
+        android:layout_toRightOf="@+id/BreedchickenimageView"
+        android:gravity="left"
+        android:textSize="25dp"
+        android:text="TextView" />
+</RelativeLayout>

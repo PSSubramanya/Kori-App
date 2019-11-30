@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/darkgrey"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!--<ImageButton-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginLeft="120dp"-->
+            <!--android:src="@drawable/drawablewishlist"-->
+            <!--android:id="@+id/wishlistbtn"/>-->
+
+
+        <TextView
+            android:id="@+id/userinfotext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="User Info"
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/dialoguecost"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="-10dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:drawableLeft="@drawable/drawablerupee"-->
+            <!--android:text="Cost Price"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:textSize="18dp"-->
+            <!--android:textStyle="italic" />-->
+
+
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/userinfotext"
+                android:layout_marginTop="20dp"
+                android:hint="Full Name"
+                android:paddingLeft="5dp"
+                android:textSize="18dp"
+                android:background="@color/greyishWhite"
+                android:id="@+id/fullnameuser"/>
+
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/fullnameuser"
+                android:layout_marginTop="20dp"
+                android:hint="Phone Number"
+                android:paddingLeft="5dp"
+                android:textSize="18dp"
+                android:background="@color/greyishWhite"
+                android:id="@+id/phoneuser"/>
+
+
+
+        <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="View"-->
+        <!--android:drawableBottom="@drawable/ic_remove_red_eye_black_24dp"-->
+        <!--android:background="@color/colorWhite"/>-->
+
+        <Button
+            android:id="@+id/chikenirrodview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/regbg_color"
+            android:paddingLeft="119dp"
+            android:paddingRight="115dp"
+            android:text="Register"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"/>
+
+        <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Buy"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--android:drawableBottom="@drawable/ic_shopping_cart_black_24dp"-->
+        <!--android:background="@color/darkpink"/>-->
+
+        <Button
+            android:id="@+id/chikenirrodbuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cancelbg_color"
+            android:paddingLeft="120dp"
+            android:paddingRight="115dp"
+            android:text="Cancel"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"/>
+
+
+    </LinearLayout>
+
+
+    <!--<ImageView-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="120dp"-->
+    <!--android:src="@drawable/poultryopenerpage"-->
+    <!--android:padding="10dp"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:id="@+id/dialoguebreedhenimg"/>-->
+
+
+    <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="120dp"-->
+    <!--android:src="@drawable/poultryopenerpage"-->
+    <!--android:padding="10dp"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:id="@+id/dialoguebreedhenimg"-->
+    <!--app:civ_border_color="#000000"-->
+    <!--app:civ_border_width="1.5dp"-->
+    <!--app:civ_shadow="true"-->
+    <!--app:civ_shadow_radius="10"-->
+    <!--app:civ_shadow_color="#8BC34A"/>-->
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/userlogo"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/dialoguebreedhenimg"
+        app:civ_border_color="#000000"
+        app:civ_border_width="1.5dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="10"/>
+
+</RelativeLayout>

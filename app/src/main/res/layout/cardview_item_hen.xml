@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:layout_height="250dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    cardview:cardCornerRadius="4dp"
+    android:id="@+id/breed_item_grid_id"
+    app:ignore="NamespaceTypo">
+
+
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+
+        <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="115dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:src="@drawable/poultryicone"-->
+            <!--app:civ_border_color="#EEEEEE"-->
+            <!--app:civ_border_width="4dp"-->
+            <!--app:civ_shadow="true"-->
+            <!--app:civ_shadow_radius="10"-->
+            <!--android:id="@+id/circularimg1"-->
+            <!--app:civ_shadow_color="#8BC34A"/>-->
+
+    <!--</LinearLayout>-->
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:src="@drawable/poultryicone"-->
+            <!--app:civ_border_color="#000000"-->
+            <!--app:civ_border_width="1.5dp"-->
+            <!--app:civ_shadow="true"-->
+            <!--app:civ_shadow_radius="10"-->
+            <!--android:background="@color/colorWhite"-->
+            <!--android:id="@+id/irrod_img_id"-->
+            <!--app:civ_shadow_color="#8BC34A"/>-->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/poultryicone"
+            app:civ_border_color="#EEEEEE"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="10"
+            android:id="@+id/irrod_img_id"
+            app:civ_shadow_color="#8BC34A"/>
+
+
+        <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:layout_marginLeft="50dp"-->
+            <!--android:src="@drawable/poultryicone"-->
+            <!--app:civ_border_color="#000000"-->
+            <!--app:civ_border_width="1.5dp"-->
+            <!--app:civ_shadow="true"-->
+            <!--app:civ_shadow_radius="10"-->
+            <!--android:id="@+id/irrod_img_id"-->
+            <!--app:civ_shadow_color="#8BC34A"/>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:text="IrrodType"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:id="@+id/irrodtypegrid"
+            android:layout_below="@+id/irrod_img_id"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/drawablerupeegreen"
+            android:paddingLeft="40dp"
+            android:paddingRight="50dp"
+            android:text="4500."
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="@color/greenishgreen"
+            android:id="@+id/irrodcostgrid"
+            android:layout_below="@+id/irrodtypegrid"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

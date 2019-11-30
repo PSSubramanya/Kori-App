@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".FragmentType1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/fragment_bg">
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/poultryicone"
+            app:civ_border_color="#EEEEEE"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="10"
+            android:id="@+id/circularimg1"
+            app:civ_shadow_color="#8BC34A"/>
+
+        <!--<ImageButton-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginLeft="65dp"-->
+            <!--android:background="@drawable/addimgbtn"-->
+            <!--android:layout_toRightOf="@+id/circularimg1"-->
+            <!--android:id="@+id/addchicken"/>-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circularimg1"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:text="Irrod"
+            android:id="@+id/irrodtext"
+            android:textSize="30dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/irrodtext">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/irrodtext"
+                android:id="@+id/irrod_recycler">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </ScrollView>
+
+        <!--<androidx.recyclerview.widget.RecyclerView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_below="@+id/irrodtext"-->
+            <!--android:id="@+id/irrod_recycler">-->
+
+        <!--</androidx.recyclerview.widget.RecyclerView>-->
+
+
+        <!--<ListView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/listView3"-->
+            <!--android:layout_below="@+id/irrodtext">-->
+        <!--</ListView>-->
+    </RelativeLayout>
+
+</LinearLayout>

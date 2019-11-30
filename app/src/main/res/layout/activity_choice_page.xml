@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262626"
+    android:orientation="vertical"
+    tools:context=".ChoicePage">
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="25dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginLeft="310dp"-->
+        <!--android:background="@drawable/ic_info_outline_black_24dp"-->
+        <!--android:id="@+id/infoid"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/chickenlayout"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/choiceborderdesign">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/choicedrawablefile"
+                android:id="@+id/chikenimg"/>
+
+            <!--<TextView-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_toRightOf="@+id/chikenimg"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:text="Chicken"-->
+                <!--android:textSize="25dp"-->
+                <!--android:gravity="center"-->
+                <!--android:id="@+id/chikentext"/>-->
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chikenimg"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="15dp"
+                android:text="Chicken"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:id="@+id/chikentext"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-220dp"
+            android:layout_marginLeft="195dp"
+            android:background="@drawable/choiceborderdesign"
+            android:id="@+id/egglayout">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/eggchoice"
+                android:id="@+id/eggs"/>
+
+            <TextView
+                android:id="@+id/eggtexts"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/eggs"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="15dp"
+                android:text="Egg"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp" />
+
+            <!--<ImageView-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_toRightOf="@+id/eggtexts"-->
+                <!--android:src="@drawable/eggchoice"-->
+                <!--android:id="@+id/eggs"/>-->
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--<Button-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:id="@+id/b"/>-->
+
+</LinearLayout>

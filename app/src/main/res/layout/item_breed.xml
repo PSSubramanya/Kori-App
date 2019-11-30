@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/breed_item_id">
+
+    <!--<ImageView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:src="@drawable/poultryicone"-->
+        <!--android:id="@+id/img_breed"/>-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp">
+
+        <!--<ImageView-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:src="@drawable/poultryicone"-->
+            <!--android:id="@+id/img_breed"/>-->
+
+        <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:src="@drawable/poultryicone"-->
+            <!--android:id="@+id/img_breed" />-->
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/poultryicone"
+            app:civ_border_color="#000000"
+            app:civ_border_width="1.5dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="10"
+            android:background="@color/colorWhite"
+            android:id="@+id/img_breed"
+            app:civ_shadow_color="#8BC34A"/>
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/rupees"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_toRightOf="@+id/img_breed"-->
+            <!--android:layout_above="@+id/textViewkorinames"-->
+            <!--android:gravity="right"-->
+            <!--android:textColor="@color/greenishgreen"-->
+            <!--android:textStyle="bold"-->
+            <!--android:background="@color/colorWhite"-->
+            <!--android:textSize="15dp"-->
+            <!--android:text="Rs." />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textViewkoriprice"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:layout_toRightOf="@+id/rupees"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:textStyle="bold"-->
+            <!--android:gravity="left"-->
+            <!--android:background="@color/greenishgreen"-->
+            <!--android:text="TextView"-->
+            <!--android:textSize="15dp" />-->
+
+        <TextView
+            android:id="@+id/textViewkoriprice"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="5dp"
+            android:layout_toRightOf="@+id/img_breed"
+            android:textColor="@color/greenishgreen"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:drawableLeft="@drawable/drawablerupeegreen"
+            android:paddingTop="5dp"
+            android:background="@color/colorWhite"
+            android:text="TextView"
+            android:textSize="15dp" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/textViewkorinames"-->
+            <!--android:layout_width="260dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_below="@+id/textViewkoriprice"-->
+            <!--android:layout_toRightOf="@+id/img_breed"-->
+            <!--android:gravity="left"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="@color/darkgrey"-->
+            <!--android:background="#FFFFFF"-->
+            <!--android:textSize="25dp"-->
+            <!--android:text="TextView" />-->
+
+        <TextView
+            android:id="@+id/textViewkorinames"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textViewkoriprice"
+            android:paddingLeft="5dp"
+            android:layout_toRightOf="@+id/img_breed"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textColor="@color/darkgrey"
+            android:background="#FFFFFF"
+            android:textSize="25dp"
+            android:text="TextView" />
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+    <!--</RelativeLayout>-->
+
+</LinearLayout>
