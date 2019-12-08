@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,11 +21,19 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class RecyclerViewAdapterGrid extends RecyclerView.Adapter<RecyclerViewAdapterGrid.MyViewHolder>
 {
-
+    public static final String TAG = "TAG";
     Context mContext1;
     List<IrrodGrid> mData1;
 
@@ -45,6 +54,15 @@ public class RecyclerViewAdapterGrid extends RecyclerView.Adapter<RecyclerViewAd
         this.mData1 = mData1;
     }
 
+
+
+    private FirebaseAuth firebaseAuth; // for storage purposes
+    FirebaseFirestore fstore;
+    String userID;
+
+
+
+
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -55,6 +73,12 @@ public class RecyclerViewAdapterGrid extends RecyclerView.Adapter<RecyclerViewAd
 //        //final RecyclerViewAdapterGrid.MyViewHolder vHolder = new RecyclerViewAdapterGrid().MyViewHolder(v);
 //
 //        final MyViewHolder viewHolder1 = new MyViewHolder(v);
+
+
+
+
+        firebaseAuth = FirebaseAuth.getInstance();
+        fstore = FirebaseFirestore.getInstance();
 
 
         View v;
@@ -99,9 +123,16 @@ public class RecyclerViewAdapterGrid extends RecyclerView.Adapter<RecyclerViewAd
         holder.breed_item_grid_id.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TextView dialogue_breedname_tv = (TextView)dialog.findViewById(R.id.dialoguebreedname);
-                TextView dialogue_breedcost_tv = (TextView)dialog.findViewById(R.id.dialoguecost);
-                ImageView dialogue_breedhen_img = (ImageView) dialog.findViewById(R.id.dialoguebreedhenimg);
+//                TextView dialogue_breedname_tv = (TextView)dialog.findViewById(R.id.dialoguebreedname);
+//                TextView dialogue_breedcost_tv = (TextView)dialog.findViewById(R.id.dialoguecost);
+//                ImageView dialogue_breedhen_img = (ImageView) dialog.findViewById(R.id.dialoguebreedhenimg);
+
+
+
+                // declared final to make these textviews accessible to inner classes
+                final TextView dialogue_breedname_tv = (TextView)dialog.findViewById(R.id.dialoguebreedname);
+                final TextView dialogue_breedcost_tv = (TextView)dialog.findViewById(R.id.dialoguecost);
+                final ImageView dialogue_breedhen_img = (ImageView) dialog.findViewById(R.id.dialoguebreedhenimg);
 
 
                 dialogue_breedname_tv.setText(mData1.get(holder.getAdapterPosition()).getBreedName1());
@@ -136,6 +167,37 @@ public class RecyclerViewAdapterGrid extends RecyclerView.Adapter<RecyclerViewAd
                         @Override
                         public void onClick(View view) {
                             dialog.dismiss();
+
+
+
+
+                            final String drawerstringname = dialogue_breedname_tv.getText().toString().trim();
+                            String drawerstringcost = dialogue_breedcost_tv.getText().toString().trim();
+
+
+                            DocumentReference documentReference = fstore.collection("Irrod Hens").document(drawerstringname);
+
+                            Map<String,Object> user = new HashMap<>();
+
+                            user.put("Hen",drawerstringname);
+                            user.put("Cost",drawerstringcost);
+
+
+                            documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void aVoid) {
+                                    Log.d(TAG, "onSuccess: Irrod hen collection created" + drawerstringname);
+                                }
+                            }).addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    Log.d(TAG, "onFailure: " + e.toString());
+                                }
+
+                            });
+
+
+
                             Intent intent = new Intent(view.getContext(),UserLoginOrRegisterDialogue.class);
                             view.getContext().startActivity(intent);
                         }

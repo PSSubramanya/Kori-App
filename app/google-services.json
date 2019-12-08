@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "54097034130",
+    "firebase_url": "https://poultrysalesapp.firebaseio.com",
+    "project_id": "poultrysalesapp",
+    "storage_bucket": "poultrysalesapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54097034130:android:700e454aace26d4fb2df4b",
+        "android_client_info": {
+          "package_name": "com.example.poultrysalesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54097034130-1tvink0jp34ntdla1kqca8p69kjkiqfn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.poultrysalesapp",
+            "certificate_hash": "5aba7d6b9128f208eaa84dd7189589c845bafe6b"
+          }
+        },
+        {
+          "client_id": "54097034130-be4vkcpv10r8cbc21u4g4f8rsu7b1chl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtIodHj9LglpdH5Ueq20TwCkGA2OLTGjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54097034130-be4vkcpv10r8cbc21u4g4f8rsu7b1chl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

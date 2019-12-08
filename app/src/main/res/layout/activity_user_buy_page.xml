@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/userbuypageid"
+    tools:context=".UserBuyPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darkgrey"
+        android:orientation="vertical">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Your Profile"-->
+            <!--android:layout_marginTop="60dp"-->
+            <!--android:layout_marginLeft="125dp"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:textStyle="bold"-->
+            <!--android:id="@+id/pt1"-->
+            <!--android:textSize="25dp"/>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_below="@+id/pt1"-->
+            <!--android:layout_marginTop="50dp"-->
+            <!--android:id="@+id/imgt1"-->
+            <!--android:src="@drawable/poultryicone"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Fullname"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_below="@+id/pt1"-->
+            <!--android:layout_toRightOf="@+id/imgt1"-->
+            <!--android:id="@+id/pt2"-->
+            <!--android:textSize="15dp"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:textStyle="bold"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Phone No."-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_below="@+id/pt2"-->
+            <!--android:layout_toRightOf="@+id/imgt1"-->
+            <!--android:id="@+id/pt3"-->
+            <!--android:textSize="15dp"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:textStyle="bold"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Alternaate No."-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_below="@+id/pt3"-->
+            <!--android:layout_toRightOf="@+id/imgt1"-->
+            <!--android:id="@+id/pt4"-->
+            <!--android:textSize="15dp"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:textStyle="bold"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="emailID"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_below="@+id/pt4"-->
+            <!--android:layout_toRightOf="@+id/imgt1"-->
+            <!--android:id="@+id/pt5"-->
+            <!--android:textSize="15dp"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:textStyle="bold"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Address"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_below="@+id/pt5"-->
+            <!--android:layout_toRightOf="@+id/imgt1"-->
+            <!--android:id="@+id/pt6"-->
+            <!--android:textSize="15dp"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:textStyle="bold"/>-->
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        app:headerLayout="@layout/header"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        app:itemTextColor="@color/darkgrey"
+        app:itemIconTint="@color/darkgrey"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        app:menu="@menu/drawermenu">
+
+        <!--<Button-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:text="Logout"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:id="@+id/userlogout"/>-->
+    </com.google.android.material.navigation.NavigationView>
+
+    <!--<Button-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:text="Logout"-->
+        <!--android:gravity="center"-->
+        <!--android:id="@+id/userlogout"/>-->
+
+</androidx.drawerlayout.widget.DrawerLayout>

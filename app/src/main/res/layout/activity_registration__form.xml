@@ -36,8 +36,9 @@
                 android:id="@+id/userinfotext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="65dp"
                 android:text="User Info"
+                android:fontFamily="@font/fzk"
                 android:textColor="@color/colorWhite"
                 android:textSize="25dp"
                 android:textStyle="bold" />
@@ -66,6 +67,8 @@
                 android:hint="Full Name"
                 android:paddingLeft="5dp"
                 android:textSize="18dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/fc"
                 android:background="@color/greyishWhite"
                 android:id="@+id/fullnameuser"/>
 
@@ -76,8 +79,10 @@
                 android:layout_below="@+id/fullnameuser"
                 android:layout_marginTop="10dp"
                 android:hint="Phone Number"
+                android:textColor="@color/black"
                 android:paddingLeft="5dp"
                 android:textSize="18dp"
+                android:fontFamily="@font/fc"
                 android:background="@color/greyishWhite"
                 android:id="@+id/phoneuser"/>
 
@@ -89,6 +94,8 @@
                 android:hint="Alternate Number"
                 android:paddingLeft="5dp"
                 android:textSize="18dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/fc"
                 android:background="@color/greyishWhite"
                 android:id="@+id/altphoneuser"/>
 
@@ -101,6 +108,9 @@
                 android:hint="Email Address"
                 android:paddingLeft="5dp"
                 android:textSize="18dp"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/fc"
+                android:textColor="@color/black"
                 android:background="@color/greyishWhite"
                 android:id="@+id/useremialid"/>
 
@@ -117,6 +127,9 @@
                 android:hint="Address"
                 android:paddingLeft="5dp"
                 android:textSize="18dp"
+                android:inputType="textPostalAddress"
+                android:fontFamily="@font/fc"
+                android:textColor="@color/black"
                 android:background="@color/greyishWhite"
                 android:id="@+id/userhomeaddress"/>
             <!--</ScrollView>-->
@@ -132,15 +145,16 @@
             <!--android:background="@color/colorWhite"/>-->
 
             <Button
-                android:id="@+id/chikenirrodview"
-                android:layout_width="match_parent"
+                android:id="@+id/registeruserinfo"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/regbg_color"
-                android:paddingLeft="119dp"
+                android:paddingLeft="111dp"
                 android:paddingRight="115dp"
                 android:text="Register"
                 android:textStyle="bold"
+                android:fontFamily="@font/fzv"
                 android:textColor="@color/colorWhite"/>
 
             <!--<Button-->
@@ -152,14 +166,17 @@
             <!--android:background="@color/darkpink"/>-->
 
             <Button
-                android:id="@+id/chikenirrodbuy"
-                android:layout_width="match_parent"
+                android:id="@+id/canceluserinfo"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/cancelbg_color"
                 android:paddingLeft="120dp"
                 android:paddingRight="115dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
                 android:text="Cancel"
                 android:textStyle="bold"
+                android:fontFamily="@font/fzv"
                 android:textColor="@color/colorWhite"/>
 
 

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrawerUserInfoPage">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darkgrey"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Profile"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="125dp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:id="@+id/pt1"
+            android:textSize="25dp"/>
+
+        <!--<ImageView-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_below="@+id/pt1"-->
+            <!--android:layout_marginTop="50dp"-->
+            <!--android:id="@+id/imgt1"-->
+            <!--android:src="@drawable/poultryicone"/>-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/pt1"
+            android:layout_marginTop="50dp"
+            android:id="@+id/imgt1"
+            android:src="@drawable/poultryicone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fullname"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="45dp"
+            android:layout_below="@+id/pt1"
+            android:layout_toRightOf="@+id/imgt1"
+            android:id="@+id/pt2"
+            android:textSize="15dp"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone No."
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="45dp"
+            android:layout_below="@+id/pt2"
+            android:layout_toRightOf="@+id/imgt1"
+            android:id="@+id/pt3"
+            android:textSize="15dp"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alternaate No."
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="45dp"
+            android:layout_below="@+id/pt3"
+            android:layout_toRightOf="@+id/imgt1"
+            android:id="@+id/pt4"
+            android:textSize="15dp"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="emailID"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="45dp"
+            android:layout_below="@+id/pt4"
+            android:layout_toRightOf="@+id/imgt1"
+            android:id="@+id/pt5"
+            android:textSize="15dp"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="45dp"
+            android:layout_below="@+id/pt5"
+            android:layout_toRightOf="@+id/imgt1"
+            android:id="@+id/pt6"
+            android:textSize="15dp"
+            android:textColor="@color/colorWhite"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

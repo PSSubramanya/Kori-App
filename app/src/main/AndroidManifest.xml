@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Registration_Form"></activity>
+        <activity android:name=".DrawerUserInfoPage"></activity>
+        <activity android:name=".UserBuyPage" />
+        <activity android:name=".Registration_Form" />
         <activity android:name=".ImageAndVideoViewerPage" />
         <activity android:name=".FragmentGridType3" />
         <activity android:name=".FragmentGridType2" />

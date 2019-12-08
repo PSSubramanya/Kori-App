@@ -14,6 +14,7 @@
     <color name="darkpink">#E30047</color>
     <color name="lightblue">#87CEEB</color>
     <color name="darkblue">#1C2E4A</color>
+    <color name="black">#000000</color>
     <color name="colorGreenLight">#ABFFC0</color>
     <color name="darkgrey">#262626</color>
     <color name="listviewcolor">#0066FF</color>

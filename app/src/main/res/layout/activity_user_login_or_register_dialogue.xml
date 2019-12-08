@@ -60,7 +60,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="left"
-                            android:text="Name"
+                            android:text="Username"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="30dp"/>
 
@@ -73,14 +73,15 @@
                             android:textSize="18dp"
                             android:paddingLeft="5dp"
                             android:background="@drawable/loginsignupborderc"
-                            android:textColor="#000000"/>
+                            android:textColor="#000000"
+                            android:id="@+id/regusername"/>
 
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="left"
-                            android:text="Address"
+                            android:text="Password"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="10dp"/>
 
@@ -93,7 +94,8 @@
                             android:textColor="#000000"
                             android:paddingLeft="5dp"
                             android:background="@drawable/loginsignupborderc"
-                            android:inputType="textPassword" />
+                            android:inputType="textPassword"
+                            android:id="@+id/regpassword"/>
 
                         <Button
                             android:layout_width="wrap_content"
@@ -161,7 +163,8 @@
                             android:textSize="18dp"
                             android:paddingLeft="5dp"
                             android:background="@drawable/loginsignupborderc"
-                            android:textColor="#000000"/>
+                            android:textColor="#000000"
+                            android:id="@+id/logusername"/>
 
 
                         <TextView
@@ -181,7 +184,8 @@
                             android:textColor="#000000"
                             android:paddingLeft="5dp"
                             android:background="@drawable/loginsignupborderc"
-                            android:inputType="textPassword" />
+                            android:inputType="textPassword"
+                            android:id="@+id/logpassword"/>
 
                         <Button
                             android:layout_width="wrap_content"

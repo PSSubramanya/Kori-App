@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/henscrolla">
+
+
+    <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_gravity="start"-->
+        <!--android:layout_marginTop="55dp"-->
+        <!--android:src="@drawable/subbuuserdpa"-->
+        <!--app:civ_border_color="@color/darkgrey"-->
+        <!--app:civ_border_width="4dp"-->
+        <!--app:civ_shadow="true"-->
+        <!--app:civ_shadow_radius="10"-->
+        <!--android:id="@+id/circularimggrid1"-->
+        <!--app:civ_shadow_color="#8BC34A"/>-->
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/userlogo"
+        app:civ_border_color="@color/darkgrey"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="10"
+        android:id="@+id/draweruserlogo"
+        app:civ_shadow_color="#8BC34A"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="start"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:id="@+id/drawerusername"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User@gmail.com"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="start"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/drawerusername"
+        android:id="@+id/draweruseremailid"/>
+
+</LinearLayout>
