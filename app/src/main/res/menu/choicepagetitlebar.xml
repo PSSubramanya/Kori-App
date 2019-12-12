@@ -6,6 +6,13 @@
     tools:context=".ChoicePage/">
 
     <item
+        android:id="@+id/directtodeliverypage"
+        android:title="Check the delivery page"
+        android:icon="@drawable/waitsymbolee"
+        app:showAsAction="always">
+    </item>
+
+    <item
         android:id="@+id/infobutton"
         android:title="Click on the icons to choose!"
         android:icon="@drawable/ic_info_outline_black_24dp"

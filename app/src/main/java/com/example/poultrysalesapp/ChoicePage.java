@@ -130,6 +130,13 @@ public class ChoicePage extends AppCompatActivity {
         {
             Toast.makeText(ChoicePage.this, "Click on the icon to choose!", Toast.LENGTH_LONG).show();
         }
+
+        if (id == R.id.directtodeliverypage)
+        {
+//            Toast.makeText(ChoicePage.this, "Check for the delivery", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(ChoicePage.this,DeliveryPage.class);
+            startActivity(intent);
+        }
         return super.onOptionsItemSelected(item);
     }
 

@@ -5,9 +5,16 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
+import android.app.Dialog;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
@@ -25,12 +32,73 @@ public class ImageAndVideoViewerPage extends AppCompatActivity {
     //private List<HorizontalScrollDB> scrollirrod;
 
     VideoView videoview;
+    FrameLayout videoframeLayout;
+    ImageView videoimageview;
+    Dialog dialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_and_video_viewer_page);
 
 
+//        dialog = new Dialog(getApplicationContext());
+//        dialog.setContentView(R.layout.video_dialog_layout);
+//
+//
+//        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+//
+//        videoframeLayout = (FrameLayout)findViewById(R.id.videoframelayout);
+//        videoimageview = (ImageView)findViewById(R.id.videoimageview);
+
+//        videoimageview.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                dialog.show();
+//
+//                if (dialog.isShowing())
+//                {
+//
+//                    WindowManager.LayoutParams lp = new WindowManager.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+//                    lp.copyFrom(dialog.getWindow().getAttributes());
+//                    dialog.getWindow().setAttributes(lp);
+//                    final VideoView videoview = (VideoView) dialog.findViewById(R.id.videoview);
+//                    Uri uri=Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.samplevideo);
+//                    videoview.setVideoURI(uri);
+//                    videoview.start();
+//
+//
+//
+////                    videoview = (VideoView)findViewById(R.id.videoview);
+////                    String videopath = "android.resource://"+getPackageName()+"/"+R.raw.samplevideo;
+////                    Uri uri = Uri.parse(videopath);
+////                    videoview.setVideoURI(uri);
+////
+////                    MediaController mediaController = new MediaController(ImageAndVideoViewerPage.this);
+////                    videoview.setMediaController(mediaController);
+////                    mediaController.setAnchorView(videoview);
+//
+//
+//
+////                    final Dialog dialog = new Dialog(context);
+////                    dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+////                    dialog.setContentView(R.layout.introvid);
+////                    dialog.show();
+////                    WindowManager.LayoutParams lp = new WindowManager.LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT);
+////                    lp.copyFrom(dialog.getWindow().getAttributes());
+////                    dialog.getWindow().setAttributes(lp);
+////                    final VideoView videoview = (VideoView) dialog.findViewById(R.id.surface_view);
+////                    Uri uri=Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.introvideo);
+////                    videoview.setVideoURI(uri);
+////                    videoview.start();
+//                }
+//            }
+//        });
+
+//        dialog = new Dialog(getApplicationContext());
+//        dialog.setContentView(R.layout.dialogue_hen);
+//
+//
+//        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
 
 //        ViewPager viewpagerimg = findViewById(R.id.viewpagerimg);
@@ -39,7 +107,8 @@ public class ImageAndVideoViewerPage extends AppCompatActivity {
 
 
         videoview = (VideoView)findViewById(R.id.videoview);
-        String videopath = "android.resource://"+getPackageName()+"/"+R.raw.samplevideo;
+//        String videopath = "android.resource://"+getPackageName()+"/"+R.raw.samplevideo;
+        String videopath = "android.resource://"+getPackageName()+"/"+R.raw.videoanimae;
         Uri uri = Uri.parse(videopath);
         videoview.setVideoURI(uri);
 
@@ -48,6 +117,7 @@ public class ImageAndVideoViewerPage extends AppCompatActivity {
         mediaController.setAnchorView(videoview);
 
         getImages();
+
 
     }
 

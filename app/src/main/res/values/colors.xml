@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimaryDark">#262626</color>
+    <color name="colorPrimaryDark1">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="Red">#FF0000</color>
+    <color name="YellowishOrange">#FFAE42</color>
     <color name="Registergreen">#22B14C</color>
+    <color name="ConfirmGreen">#00C851</color>
     <color name="greenishdark">#00541E</color>
     <color name="yellow">#FFFF00</color>
     <color name="greenishgreen">#008F11</color>

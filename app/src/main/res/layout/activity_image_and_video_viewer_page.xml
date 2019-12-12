@@ -58,7 +58,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tap on the Video to see the option!"
+        android:text="Tap on the Video to play the clip!"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         android:layout_below="@+id/horizrecyclerview"
@@ -66,23 +66,57 @@
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
         android:gravity="center"
+        android:fontFamily="@font/fc"
         android:id="@+id/textPlaceholder"/>
 
 
+    <!--<FrameLayout-->
+        <!--android:layout_width="281dp"-->
+        <!--android:layout_height="380dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:id="@+id/videoframelayout"-->
+        <!--android:layout_below="@+id/textPlaceholder">-->
+
+        <!--<VideoView-->
+            <!--android:layout_width="281dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/videoview"/>-->
+
+
+        <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="281dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@drawable/playbgsymbola"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/videoimageview"/>&ndash;&gt;-->
+
+    <!--</FrameLayout>-->
+
+
     <FrameLayout
-        android:layout_width="281dp"
-        android:layout_height="500dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
+        android:id="@+id/videoframelayout"
         android:layout_below="@+id/textPlaceholder">
 
         <VideoView
-            android:layout_width="281dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:id="@+id/videoview"/>
 
+
+        <!--<ImageView-->
+        <!--android:layout_width="281dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/playbgsymbola"-->
+        <!--android:id="@+id/videoimageview"/>-->
+
     </FrameLayout>
+
 
 
     <!--<RelativeLayout-->

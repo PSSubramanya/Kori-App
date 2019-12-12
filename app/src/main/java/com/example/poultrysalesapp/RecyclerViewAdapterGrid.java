@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,7 +27,10 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -56,8 +60,16 @@ public class RecyclerViewAdapterGrid extends RecyclerView.Adapter<RecyclerViewAd
 
 
 
+    private final static int mwidth = 512;
+    private final static int mheight = 512;
+
+    private ArrayList<String> pathArray;
+    private int array_position;
+
+
     private FirebaseAuth firebaseAuth; // for storage purposes
     FirebaseFirestore fstore;
+    private StorageReference storageReference;
     String userID;
 
 
@@ -76,9 +88,15 @@ public class RecyclerViewAdapterGrid extends RecyclerView.Adapter<RecyclerViewAd
 
 
 
+        pathArray = new ArrayList<>();
 
         firebaseAuth = FirebaseAuth.getInstance();
         fstore = FirebaseFirestore.getInstance();
+        storageReference = FirebaseStorage.getInstance().getReference();
+
+
+
+//        checkFilePermission();
 
 
         View v;
@@ -199,6 +217,7 @@ public class RecyclerViewAdapterGrid extends RecyclerView.Adapter<RecyclerViewAd
 
 
                             Intent intent = new Intent(view.getContext(),UserLoginOrRegisterDialogue.class);
+                            intent.putExtra("drawerstringname",drawerstringname);
                             view.getContext().startActivity(intent);
                         }
                     });
@@ -238,6 +257,15 @@ public class RecyclerViewAdapterGrid extends RecyclerView.Adapter<RecyclerViewAd
 //        CardView breed_item_grid_id;
     }
 
+
+//    private void checkFilePermission()
+//    {
+//        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP)
+//        {
+//            int permissionCheck = DeliveryPage.this.checkSelf
+//        }
+//    }
+
     @Override
     public int getItemCount() {
         return mData1.size();
@@ -269,3 +297,8 @@ public class RecyclerViewAdapterGrid extends RecyclerView.Adapter<RecyclerViewAd
         }
     }
 }
+
+
+
+
+// on click of confirm button it shud ask for gps location and once location is sent only then it should to be directed to Delivery Page

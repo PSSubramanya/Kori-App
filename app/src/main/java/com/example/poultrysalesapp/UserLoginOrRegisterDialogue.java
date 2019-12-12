@@ -56,6 +56,9 @@ public class UserLoginOrRegisterDialogue extends AppCompatActivity
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
+
+        final  String dStringname = getIntent().getStringExtra("drawerstringname");
+
         cancelbtn1 = (Button)findViewById(R.id.cancelbtn1);
         cancelbtn2 = (Button)findViewById(R.id.cancelbtn2);
         regbtn = (Button)findViewById(R.id.regbtn);
@@ -290,7 +293,11 @@ public class UserLoginOrRegisterDialogue extends AppCompatActivity
                         {
                             progressDialog.dismiss();
                             Toast.makeText(UserLoginOrRegisterDialogue.this,"Logged in Successfully",Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(),UserBuyPage.class));
+                            Intent intent = new Intent(UserLoginOrRegisterDialogue.this,UserBuyPage.class);
+                            intent.putExtra("dStringname",dStringname);
+                            startActivity(intent);
+//                            startActivity(new Intent(getApplicationContext(),UserBuyPage.class));
+//                            drawerstringname
                         }
                         else
                         {

@@ -15,6 +15,205 @@
         android:background="@color/darkgrey"
         android:orientation="vertical">
 
+
+        <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+            <!--android:layout_width="120dp"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:src="@drawable/poultryopenerpage"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:id="@+id/displayimage"-->
+            <!--app:civ_border_color="#000000"-->
+            <!--app:civ_border_width="1.5dp"-->
+            <!--app:civ_shadow="true"-->
+            <!--app:civ_shadow_radius="10"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:fontFamily="@font/fc"-->
+            <!--android:layout_marginLeft="90dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_below="@+id/displayimage"-->
+            <!--android:text="Irrod Breed"-->
+            <!--android:id="@+id/displayhenname"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:textSize="30dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginLeft="140dp"-->
+            <!--android:textStyle="italic"-->
+            <!--android:text="Cost Price"-->
+            <!--android:layout_below="@+id/displayhenname"-->
+            <!--android:id="@+id/displayhencost"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:textSize="20dp"/>-->
+
+
+        <!--<Button-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_below="@+id/displayhencost"-->
+            <!--android:layout_marginLeft="80dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:text="CONFIRM"-->
+            <!--android:fontFamily="@font/fc"-->
+            <!--android:textSize="18dp"-->
+            <!--android:paddingRight="40dp"-->
+            <!--android:paddingLeft="35dp"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:background="@color/ConfirmGreen"-->
+            <!--android:drawableRight="@drawable/ic_thumb_up_black_24dp"-->
+            <!--android:id="@+id/displayconfirm"/>-->
+
+        <!--<Button-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_below="@+id/displayconfirm"-->
+            <!--android:layout_marginLeft="80dp"-->
+            <!--android:paddingRight="20dp"-->
+            <!--android:paddingLeft="20dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:text="ADD TO CART"-->
+            <!--android:textSize="18dp"-->
+            <!--android:fontFamily="@font/fc"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:background="@color/YellowishOrange"-->
+            <!--android:drawableRight="@drawable/ic_shopping_cart_black_24dp"-->
+            <!--android:id="@+id/displaycart"/>-->
+
+
+        <!--<ImageButton-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_below="@+id/displaycart"-->
+            <!--android:layout_marginLeft="165dp"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:background="@drawable/contactusicona"-->
+            <!--android:id="@+id/displaycontactus"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Contact Us"-->
+            <!--android:layout_below="@+id/displaycontactus"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:fontFamily="@font/fc"-->
+            <!--android:layout_marginLeft="134dp"/>-->
+
+
+
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/poultryopenerpage"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/displayimage"
+            app:civ_border_color="#000000"
+            app:civ_border_width="1.5dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/fc"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_below="@+id/displayimage"
+            android:text="Irrod Breed"
+            android:id="@+id/displayhenname"
+            android:textColor="@color/colorWhite"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/drawablerupeeb"
+            android:textStyle="italic"
+            android:text="Cost Price"
+            android:layout_below="@+id/displayhenname"
+            android:id="@+id/displayhencost"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"/>
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/displayhencost"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="CONFIRM"
+            android:fontFamily="@font/fc"
+            android:textSize="18dp"
+            android:paddingRight="40dp"
+            android:paddingLeft="35dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/ConfirmGreen"
+            android:drawableRight="@drawable/ic_thumb_up_black_24dp"
+            android:id="@+id/displayconfirm"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/displayconfirm"
+            android:layout_centerHorizontal="true"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="ADD TO CART"
+            android:textSize="18dp"
+            android:fontFamily="@font/fc"
+            android:textColor="@color/black"
+            android:background="@color/YellowishOrange"
+            android:drawableRight="@drawable/ic_shopping_cart_black_24dp"
+            android:id="@+id/displaycart"/>
+
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/displaycart"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/contactusicona"
+            android:onClick="displaycontactusoptions"
+            android:id="@+id/displaycontactus"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:layout_below="@+id/displaycontactus"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/fc"
+            android:layout_centerHorizontal="true"/>
+
+
+
+
+
+
+
+
+
+
+
         <!--<TextView-->
             <!--android:layout_width="wrap_content"-->
             <!--android:layout_height="wrap_content"-->

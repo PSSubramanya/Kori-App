@@ -53,8 +53,9 @@
                 android:textColor="#FFFFFF"
                 android:layout_marginTop="80dp"
                 android:layout_marginBottom="15dp"
+                android:fontFamily="@font/fc"
                 android:text="Chicken"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:gravity="center"
                 android:id="@+id/chikentext"/>
         </RelativeLayout>
@@ -62,7 +63,7 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="-220dp"
+            android:layout_marginTop="-210dp"
             android:layout_marginLeft="195dp"
             android:background="@drawable/choiceborderdesign"
             android:id="@+id/egglayout">
@@ -84,9 +85,10 @@
                 android:layout_below="@+id/eggs"
                 android:layout_marginTop="80dp"
                 android:layout_marginBottom="15dp"
+                android:fontFamily="@font/fc"
                 android:text="Egg"
                 android:textColor="#FFFFFF"
-                android:textSize="25dp" />
+                android:textSize="20dp" />
 
             <!--<ImageView-->
                 <!--android:layout_width="100dp"-->

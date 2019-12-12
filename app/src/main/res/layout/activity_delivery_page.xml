@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgrey"
+    tools:context=".DeliveryPage">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/waitsymbolbg"
+        android:id="@+id/waitsymbol"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELIVERY ON THE WAY"
+        android:layout_below="@+id/waitsymbol"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:fontFamily="@font/ff"
+        android:id="@+id/deliverytext1"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deliverytext1"
+        android:layout_marginTop="65dp"
+        android:layout_centerHorizontal="true"
+        android:text="You will get your order within a few minutes. Once you get your delivery make the payment and click on the check box below"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/deliverytext2"
+        android:fontFamily="@font/fc"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recieved the order"
+        android:fontFamily="@font/fc"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:layout_below="@+id/deliverytext2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/deliverycheckbox"/>
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/deliverycheckbox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="DONE"
+        android:fontFamily="@font/fc"
+        android:textSize="18dp"
+        android:paddingRight="35dp"
+        android:paddingLeft="35dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/ConfirmGreen"
+        android:drawableRight="@drawable/ic_thumb_up_black_24dp"
+        android:id="@+id/deliverydone"/>
+
+
+
+</RelativeLayout>

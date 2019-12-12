@@ -3,16 +3,24 @@ package com.example.poultrysalesapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.PopupMenu;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -26,15 +34,20 @@ import javax.annotation.Nullable;
 
 public class UserBuyPage extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
+    private static final int REQUEST_CALL = 1;
     private DrawerLayout mdrawerLayout;
     private ActionBarDrawerToggle mToggle;
-    TextView pt2,pt3,pt4,pt5,pt6;
+    TextView pt2, pt3, pt4, pt5, pt6;
+    TextView displayhenname, displayhencost;
     TextView drawerusername, draweruseremailid;
     Button userlogout;
+    Button displayconfirm;
+    ImageButton displaycontactus;
     //private ProgressDialog progressDialog;
     private FirebaseAuth firebaseAuth;
     private FirebaseFirestore firestore;
     String userID;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +55,39 @@ public class UserBuyPage extends AppCompatActivity implements NavigationView.OnN
 
         firebaseAuth = FirebaseAuth.getInstance();
         firestore = FirebaseFirestore.getInstance();
+
+        displayhenname = (TextView) findViewById(R.id.displayhenname);
+        displayhencost = (TextView) findViewById(R.id.displayhencost);
+
+        displayconfirm = (Button) findViewById(R.id.displayconfirm);
+
+        displaycontactus = (ImageButton) findViewById(R.id.displaycontactus);
+
+        displayconfirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(UserBuyPage.this, DeliveryPage.class);
+                startActivity(intent);
+            }
+        });
+
+
+//        final String drawerstringname = dialogue_breedname_tv.getText().toString().trim();
+//        String drawerstringcost = dialogue_breedcost_tv.getText().toString().trim();
+
+//        String drawerstringname = getIntent().getStringExtra("dStringname");
+//        String drawerstringname = "Irrod1";
+//
+//        DocumentReference documentReference = firestore.collection("Irrod Hens").document(drawerstringname);
+//        documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
+//            @Override
+//            public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException e) {
+//                drawerusername.setText(documentSnapshot.getString("Hen"));
+//                displayhencost.setText(documentSnapshot.getString("Cost"));
+////                drawerusername.setText(documentSnapshot.getString("User Fullname"));
+////                draweruseremailid.setText(documentSnapshot.getString("Email-id"));
+//            }
+//        });
 
 //        pt2 = (TextView)findViewById(R.id.pt2);
 //        pt3 = (TextView)findViewById(R.id.pt3);
@@ -68,8 +114,8 @@ public class UserBuyPage extends AppCompatActivity implements NavigationView.OnN
 //            }
 //        });
 
-        mdrawerLayout = (DrawerLayout)findViewById(R.id.userbuypageid);
-        mToggle = new ActionBarDrawerToggle(this,mdrawerLayout,R.string.open,R.string.close);
+        mdrawerLayout = (DrawerLayout) findViewById(R.id.userbuypageid);
+        mToggle = new ActionBarDrawerToggle(this, mdrawerLayout, R.string.open, R.string.close);
         mdrawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -87,6 +133,84 @@ public class UserBuyPage extends AppCompatActivity implements NavigationView.OnN
 //                startActivity(new Intent(getApplicationContext(),UserLoginOrRegisterDialogue.class));
 //            }
 //        });
+    }
+
+    public void DialToKoriOffice() {
+//        Intent intent = new Intent(Intent.ACTION_CALL);
+//        intent.setData(Uri.parse("tel:7204958072"));
+        if (checkSelfPermission(Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    Activity#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for Activity#requestPermissions for more details.
+//            return;
+            ActivityCompat.requestPermissions(UserBuyPage.this,
+                    new String[]{Manifest.permission.CALL_PHONE},REQUEST_CALL);
+        }
+        else
+        {
+//                String dial = "tel:"+number;
+            String dial = "tel:7204958072";
+            startActivity(new Intent(Intent.ACTION_CALL, Uri.parse(dial)));
+        }
+//        startActivity(intent);
+    }
+    public void displaycontactusoptions(View view)
+    {
+        PopupMenu popupMenu = new PopupMenu(UserBuyPage.this,displaycontactus);
+        popupMenu.getMenuInflater().inflate(R.menu.contactusoptions,popupMenu.getMenu());
+        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem menuItem) {
+
+//                switch (menuItem.getItemId())
+//                {
+//
+//                }
+
+                int popupid = menuItem.getItemId();
+
+                if (popupid == R.id.contactuscalloption)
+                {
+//                    Toast.makeText(UserBuyPage.this, "Make  a call", Toast.LENGTH_SHORT).show();
+                    DialToKoriOffice();
+                }
+
+                if (popupid == R.id.contactusmsgoption)
+                {
+                    Toast.makeText(UserBuyPage.this, "Send  a message", Toast.LENGTH_SHORT).show();
+                }
+                return true;
+            }
+        });
+        popupMenu.show();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //return super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.displayconfirmpage2,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        int id = item.getItemId();
+
+        if (id == R.id.userLocation)
+        {
+            Toast.makeText(UserBuyPage.this, "User Location", Toast.LENGTH_SHORT).show();
+        }
+
+        if (id == R.id.calldelivery)
+        {
+            Toast.makeText(UserBuyPage.this, "Call for query", Toast.LENGTH_SHORT).show();
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 

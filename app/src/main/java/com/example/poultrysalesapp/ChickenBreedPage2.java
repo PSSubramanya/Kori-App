@@ -2,6 +2,7 @@ package com.example.poultrysalesapp;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.viewpager.widget.ViewPager;
@@ -41,6 +42,8 @@ public class ChickenBreedPage2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chicken_breed_page2);
+//        ActionBar actionBar = getSupportActionBar();
+//        actionBar.setLogo(android.R.drawable.ic_menu_info_details);
 
         setupViewPager();
 
