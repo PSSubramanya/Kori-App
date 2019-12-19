@@ -12,6 +12,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -41,6 +42,7 @@ public class ImageAndVideoViewerPage extends AppCompatActivity {
         setContentView(R.layout.activity_image_and_video_viewer_page);
 
 
+        videoimageview = (ImageView)findViewById(R.id.videoimageview);
 //        dialog = new Dialog(getApplicationContext());
 //        dialog.setContentView(R.layout.video_dialog_layout);
 //
@@ -49,6 +51,81 @@ public class ImageAndVideoViewerPage extends AppCompatActivity {
 //
 //        videoframeLayout = (FrameLayout)findViewById(R.id.videoframelayout);
 //        videoimageview = (ImageView)findViewById(R.id.videoimageview);
+
+
+
+//        videoimageview.setOnClickListener(new OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//        // TODO Auto-generated method stub
+//        // custom dialog
+//                final Dialog dialog = new Dialog(context);
+//                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+//                dialog.setContentView(R.layout.introvid);
+//                dialog.show();
+//                WindowManager.LayoutParams lp = new WindowManager.LayoutParams(
+//                        LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+//                lp.copyFrom(dialog.getWindow().getAttributes());
+//                dialog.getWindow().setAttributes(lp);
+//                final VideoView videoview = (VideoView) findViewById(R.id.surface_view);
+//                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.introvideo);
+//                videoview.setVideoURI(uri);
+//                videoview.start();
+//            }
+//        });
+
+
+
+
+
+        //VideoDialog Working Code Starts Here
+
+
+        videoimageview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // TODO Auto-generated method stub
+                // custom dialog
+//                final Dialog dialog = new Dialog(context);
+                final Dialog dialog = new Dialog(ImageAndVideoViewerPage.this);
+                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                dialog.setContentView(R.layout.video_dialog_layout);
+                dialog.show();
+//                WindowManager.LayoutParams lp = new WindowManager.LayoutParams(
+//                        LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+                WindowManager.LayoutParams lp = new WindowManager.LayoutParams(
+                        WindowManager.LayoutParams.WRAP_CONTENT, WindowManager.LayoutParams.WRAP_CONTENT);
+                lp.copyFrom(dialog.getWindow().getAttributes());
+                dialog.getWindow().setAttributes(lp);
+                final VideoView videoview = (VideoView)dialog.findViewById(R.id.videoview1);
+                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.videoanimae);
+                videoview.setVideoURI(uri);
+                videoview.setZOrderOnTop(true);
+
+                MediaController mediaController = new MediaController(ImageAndVideoViewerPage.this);
+                videoview.setMediaController(mediaController);
+                mediaController.setAnchorView(videoview);
+
+                videoview.start();
+
+            }
+        });
+
+
+        //VideoDialog Working Code Ends Here
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //        videoimageview.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -106,15 +183,21 @@ public class ImageAndVideoViewerPage extends AppCompatActivity {
 //        viewpagerimg.setAdapter(imageAdapter);
 
 
-        videoview = (VideoView)findViewById(R.id.videoview);
-//        String videopath = "android.resource://"+getPackageName()+"/"+R.raw.samplevideo;
-        String videopath = "android.resource://"+getPackageName()+"/"+R.raw.videoanimae;
-        Uri uri = Uri.parse(videopath);
-        videoview.setVideoURI(uri);
 
-        MediaController mediaController = new MediaController(this);
-        videoview.setMediaController(mediaController);
-        mediaController.setAnchorView(videoview);
+
+        //Working code starts from here
+
+//        videoview = (VideoView)findViewById(R.id.videoview);
+////        String videopath = "android.resource://"+getPackageName()+"/"+R.raw.samplevideo;
+//        String videopath = "android.resource://"+getPackageName()+"/"+R.raw.videoanimae;
+//        Uri uri = Uri.parse(videopath);
+//        videoview.setVideoURI(uri);
+//
+//        MediaController mediaController = new MediaController(this);
+//        videoview.setMediaController(mediaController);
+//        mediaController.setAnchorView(videoview);
+
+        //Working Code ends here
 
         getImages();
 

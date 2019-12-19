@@ -6,13 +6,13 @@
     android:layout_gravity="center">
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:background="@color/darkgrey"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:background="@color/darkgrey"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:orientation="vertical">-->
 
         <!--<ImageButton-->
             <!--android:layout_width="40dp"-->
@@ -48,9 +48,11 @@
 
 
         <VideoView
-        android:layout_width="281dp"
-        android:layout_height="160dp"
-        android:id="@+id/videoview1"/>
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/videoview1"/>
 
 
         <!--<Button-->
@@ -92,7 +94,7 @@
             <!--android:textColor="@color/colorWhite" />-->
 
 
-    </LinearLayout>
+    <!--</LinearLayout>-->
 
 
     <!--<ImageView-->

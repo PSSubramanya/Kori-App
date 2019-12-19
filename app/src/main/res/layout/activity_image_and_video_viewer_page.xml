@@ -94,19 +94,44 @@
     <!--</FrameLayout>-->
 
 
-    <FrameLayout
+    <!--<FrameLayout-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="300dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:id="@+id/videoframelayout"-->
+        <!--android:layout_below="@+id/textPlaceholder">-->
+
+        <!--<VideoView-->
+            <!--android:layout_width="300dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/videoview"/>-->
+
+
+        <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="281dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:background="@drawable/playbgsymbola"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/videoimageview"/>&ndash;&gt;-->
+
+    <!--</FrameLayout>-->
+
+
+    <ImageView
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:id="@+id/videoframelayout"
+        android:id="@+id/videoimageview"
+        android:src="@drawable/playbgsymbola"
         android:layout_below="@+id/textPlaceholder">
 
-        <VideoView
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/videoview"/>
+        <!--<VideoView-->
+            <!--android:layout_width="300dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/videoview"/>-->
 
 
         <!--<ImageView-->
@@ -115,7 +140,7 @@
         <!--android:background="@drawable/playbgsymbola"-->
         <!--android:id="@+id/videoimageview"/>-->
 
-    </FrameLayout>
+    </ImageView>
 
 
 

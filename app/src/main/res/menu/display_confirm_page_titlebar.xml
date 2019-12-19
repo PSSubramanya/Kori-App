@@ -5,6 +5,14 @@
     tools:context=".DeliveryPage/">
 
 
+    <item
+        android:id="@+id/orderlistdelivery"
+        android:title="Order Delivery List"
+        android:icon="@drawable/orderlista"
+        app:showAsAction="always">
+    </item>
+
+
 
     <item
         android:id="@+id/calldelivery"

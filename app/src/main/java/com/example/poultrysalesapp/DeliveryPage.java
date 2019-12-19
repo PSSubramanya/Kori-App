@@ -47,6 +47,12 @@ public class DeliveryPage extends AppCompatActivity {
             DialToKoriOffice2();
 //            Toast.makeText(DeliveryPage.this, "Call to Kori Office", Toast.LENGTH_SHORT).show();
         }
+
+
+        if (id == R.id.orderlistdelivery)
+        {
+            Toast.makeText(DeliveryPage.this, "Check the list of order for the current delivery", Toast.LENGTH_SHORT).show();
+        }
         return super.onOptionsItemSelected(item);
     }
 
