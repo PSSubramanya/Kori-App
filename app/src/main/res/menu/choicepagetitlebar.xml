@@ -12,9 +12,18 @@
         app:showAsAction="always">
     </item>
 
+
+    <!--<item-->
+        <!--android:id="@+id/helpbutton"-->
+        <!--android:title="Help button"-->
+        <!--android:icon="@drawable/ic_help_black_24dp"-->
+        <!--app:showAsAction="always">-->
+    <!--</item>-->
+
+
     <item
         android:id="@+id/infobutton"
-        android:title="Click on the icons to choose!"
+        android:title="About Us"
         android:icon="@drawable/ic_info_outline_black_24dp"
         app:showAsAction="always">
     </item>

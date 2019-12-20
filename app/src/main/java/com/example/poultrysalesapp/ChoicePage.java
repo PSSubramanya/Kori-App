@@ -126,9 +126,16 @@ public class ChoicePage extends AppCompatActivity {
 
         int id = item.getItemId();
 
+//        if (id == R.id.helpbutton)
+//        {
+//            Toast.makeText(ChoicePage.this, "Click on the icons to choose!", Toast.LENGTH_LONG).show();
+//        }
+
         if (id == R.id.infobutton)
         {
-            Toast.makeText(ChoicePage.this, "Click on the icon to choose!", Toast.LENGTH_LONG).show();
+//            Toast.makeText(ChoicePage.this, "Click on the icon to choose!", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(ChoicePage.this,AboutUsPage.class);
+            startActivity(intent);
         }
 
         if (id == R.id.directtodeliverypage)

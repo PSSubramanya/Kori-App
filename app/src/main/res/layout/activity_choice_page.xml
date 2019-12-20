@@ -16,7 +16,7 @@
         <!--android:layout_marginLeft="310dp"-->
         <!--android:background="@drawable/ic_info_outline_black_24dp"-->
         <!--android:id="@+id/infoid"/>-->
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="125dp"
@@ -63,8 +63,9 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="-210dp"
-            android:layout_marginLeft="195dp"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/chickenlayout"
+            android:layout_marginLeft="15dp"
             android:background="@drawable/choiceborderdesign"
             android:id="@+id/egglayout">
 
@@ -101,7 +102,7 @@
                 <!--android:id="@+id/eggs"/>-->
         </RelativeLayout>
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <!--<Button-->
         <!--android:layout_width="100dp"-->

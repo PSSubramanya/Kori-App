@@ -11,6 +11,7 @@ import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
@@ -116,6 +117,9 @@ public class UserBuyPage extends AppCompatActivity implements NavigationView.OnN
 
         mdrawerLayout = (DrawerLayout) findViewById(R.id.userbuypageid);
         mToggle = new ActionBarDrawerToggle(this, mdrawerLayout, R.string.open, R.string.close);
+
+        mToggle.getDrawerArrowDrawable().setColor(Color.WHITE);
+
         mdrawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

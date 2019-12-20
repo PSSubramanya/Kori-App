@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgrey"
+    android:id="@+id/aboutuspageid"
+    tools:context=".AboutUsPage">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/koriappdesigna"
+            android:id="@+id/koriaboutusicon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/appversionnumber"
+            android:text="Version 1.0"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/koriaboutusicon"/>
+
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/appversionnumber"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="14dp"
+            android:gravity="start"
+            android:id="@+id/devtextview"
+            android:text="Developed by:"/>
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/devtextview"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp"
+            android:fontFamily="@font/fn"
+            android:id="@+id/devtextview1"
+            android:gravity="start"
+            android:text="P.S. Subramanya Bhat\n\nSEND FEEDBACK : Use this to send us mail about your suggestions, complaints or feedback. Mails are a better way to react with us.\n\nRATE THIS APP : If you like the KORI app then please rate our app and encourage us to do more good work."/>
+
+        <RelativeLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/devtextview1"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="80dp"
+                android:text="Like on Facebook :"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/fblogintext"
+                android:gravity="start"/>
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fblogintext"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="80dp"
+                android:text="Follow on Google :"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/followgoogletext"
+                android:gravity="start"/>
+
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/fblogintext"
+                android:layout_marginTop="25dp"
+                android:id="@+id/loginfbicon"
+                android:background="@drawable/fbicona"/>
+
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/followgoogletext"
+                android:layout_below="@+id/fblogintext"
+                android:layout_marginTop="30dp"
+                android:id="@+id/logingoogleicon"
+                android:background="@drawable/googleplusicona"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        app:headerLayout="@layout/headerb"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        app:itemTextColor="@color/darkgrey"
+        app:itemIconTint="@color/iconcoloryellow"
+        android:id="@+id/nav_view2"
+        android:layout_gravity="start"
+        app:menu="@menu/feedback_help_drawermenu">
+
+        <!--<Button-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:text="Logout"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:id="@+id/userlogout"/>-->
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

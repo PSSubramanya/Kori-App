@@ -8,6 +8,15 @@
     <color name="YellowishOrange">#FFAE42</color>
     <color name="Registergreen">#22B14C</color>
     <color name="ConfirmGreen">#00C851</color>
+    <color name="iconbluecolor">#042FD9</color>
+    <color name="iconbluecolora">#6262FF</color>
+    <color name="fbiconcolor">#3B5998</color>
+    <color name="fbiconcolora">#4467A0</color>
+    <color name="fbiconcolorb">#4162A7</color>
+    <color name="googleplusiconcolor">#DB4A39</color>
+    <color name="googleplusiconcolorb">#CF3625</color>
+    <color name="googleplusiconcolorc">#D93A28</color>
+    <color name="iconcoloryellow">#FFBF00</color>
     <color name="greenishdark">#00541E</color>
     <color name="yellow">#FFFF00</color>
     <color name="greenishgreen">#008F11</color>

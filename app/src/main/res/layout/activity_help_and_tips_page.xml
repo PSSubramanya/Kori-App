@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgrey"
+    tools:context=".HelpAndTipsPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:id="@+id/indrelid"
+        android:layout_marginTop="30dp">
+        
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@color/colorWhite"
+            android:text="Activity INDEX"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:fontFamily="@font/ffv"
+            android:id="@+id/indexid"
+            android:background="@color/darkgrey"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@color/colorWhite"
+            android:text="1. Intro Page"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/indexid"
+            android:fontFamily="@font/ffv"
+            android:id="@+id/index1"
+            android:background="@color/darkgrey"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@color/colorWhite"
+            android:text="2. Developer's Info"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/index1"
+            android:fontFamily="@font/ffv"
+            android:id="@+id/index2"
+            android:background="@color/darkgrey"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@color/colorWhite"
+            android:text="3.Drawer Layout for Info Page "
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/index2"
+            android:fontFamily="@font/ffv"
+            android:id="@+id/index3"
+            android:background="@color/darkgrey"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@color/colorWhite"
+            android:text="4. App Info"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/index3"
+            android:fontFamily="@font/ffv"
+            android:id="@+id/index4"
+            android:background="@color/darkgrey"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textSize="30dp"
+            android:textColor="@color/colorWhite"
+            android:text="1. Intro Page"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/index4"
+            android:fontFamily="@font/ffv"
+            android:id="@+id/index11"
+            android:background="@color/darkgrey"/>
+
+
+
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="300dp"
+            android:layout_below="@+id/index11"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/snapshotborder"
+            android:id="@+id/snappicture1"
+            android:src="@drawable/snapshota"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:gravity="start"
+            android:layout_below="@+id/snappicture1"
+            android:fontFamily="@font/ffv"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/snappicdesc1"
+            android:text="This is the landing page or we can call this as a home page. Here the app provides us two options. If you choose the hen logo it will direct you to the next page to order hen.\nIf you choode the egg logo it will direct you to the next page to order eggs.\nThere are two icons in the action bar\n\t\t1. Directs you to the Order Delivery page.\n\t\t2. App and Developer info page."/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textSize="30dp"
+            android:textColor="@color/colorWhite"
+            android:text="2. Developer's Info"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/snappicdesc1"
+            android:fontFamily="@font/ffv"
+            android:id="@+id/index21"
+            android:background="@color/darkgrey"/>
+
+
+
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="300dp"
+            android:layout_below="@+id/index21"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/snapshotborder"
+            android:id="@+id/snappicture2"
+            android:src="@drawable/snapshotb"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:gravity="start"
+            android:layout_below="@+id/snappicture2"
+            android:fontFamily="@font/ffv"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp"
+            android:id="@+id/snappicdesc2"
+            android:text="This is the Developer's info page.\nThis page gives you the information regarding app version number and navigation drawer to rate the app, info regarding app and give feedback about the app."/>
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

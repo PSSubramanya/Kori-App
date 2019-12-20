@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgrey"
+    tools:context=".AppInfoPage">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/korilogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:fontFamily="@font/fn"
+        android:text="KORI App is an online shopping app to buy hens and eggs of different breeds. You simply need to register and login to the app and order for the required hen or egg. You also will need to set the location to where the order needs to be delivered.  We will come to the spot and deliver your order. And we accept money in cash on delivery form. "/>
+
+</RelativeLayout>
