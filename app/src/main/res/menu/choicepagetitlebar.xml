@@ -5,6 +5,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ChoicePage/">
 
+
+
+
+    <item
+        android:id="@+id/adminloginpage"
+        android:title="Admin Login"
+        android:icon="@drawable/adminlogin"
+        app:showAsAction="always">
+    </item>
+
+
+
+
+    <item
+        android:id="@+id/deliveryboylogin"
+        android:title="Delivery boy Login"
+        android:icon="@drawable/deliveryboyee"
+        app:showAsAction="always">
+    </item>
+
+
+
     <item
         android:id="@+id/directtodeliverypage"
         android:title="Check the delivery page"

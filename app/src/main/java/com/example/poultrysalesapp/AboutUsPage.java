@@ -80,6 +80,13 @@ public class AboutUsPage extends AppCompatActivity implements NavigationView.OnN
             startActivity(intent);
         }
 
+
+        if (id == R.id.codedevelopericon)
+        {
+            Intent intent = new Intent(AboutUsPage.this,CreditsPage.class);
+            startActivity(intent);
+        }
+
         DrawerLayout mdrawerLayout = (DrawerLayout)findViewById(R.id.aboutuspageid);
         mdrawerLayout.closeDrawer(GravityCompat.START);
         return true;

@@ -5,24 +5,75 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.Toast;
 
 public class DeliveryPage extends AppCompatActivity {
 
     private static final int REQUEST_CALL = 1;
 
+    Dialog dialog;
+    CheckBox deliverycheckBox;
+    Button deliverydone;
+//    Dialog dialog1;
+//    Dialog dialog2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delivery_page);
+
+
+        deliverycheckBox = (CheckBox)findViewById(R.id.deliverycheckbox);
+
+        deliverydone = (Button)findViewById(R.id.deliverydone);
+
+        dialog = new Dialog(DeliveryPage.this);
+        dialog.setContentView(R.layout.qrcode_generator_dialog);
+
+
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+
+//        if (deliverycheckBox.isChecked())
+//        {
+//            dialog.show();
+//        }
+
+//        deliverydone.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                dialog.show();
+//            }
+//        });
     }
 
+    public void CheckBoxItemClicked(View view)
+    {
+        deliverycheckBox = (CheckBox)view.findViewById(R.id.deliverycheckbox);
+
+        dialog = new Dialog(DeliveryPage.this);
+        dialog.setContentView(R.layout.qrcode_generator_dialog);
+
+
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+        if (deliverycheckBox.isChecked())
+        {
+            dialog.show();
+        }
+    }
 
 
     @Override

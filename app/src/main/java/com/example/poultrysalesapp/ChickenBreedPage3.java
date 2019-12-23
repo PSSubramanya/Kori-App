@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -63,6 +64,12 @@ public class ChickenBreedPage3 extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         int id = item.getItemId();
+
+
+        if (id == R.id.addtohenlist)
+        {
+            Toast.makeText(ChickenBreedPage3.this, "List of multiple hen ordered", Toast.LENGTH_SHORT).show();
+        }
 
         if (id == R.id.addchickenbreed)
         {

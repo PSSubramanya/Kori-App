@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgrey"
+    tools:context=".CreditsPage">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREDITS"
+        android:textColor="@color/colorWhite"
+        android:textSize="35dp"
+        android:fontFamily="@font/fn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/creditstext"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Jehad Mohammad"
+        android:textColor="@color/colorWhite"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/creditstext"
+        android:fontFamily="@font/fn"
+        android:gravity="start"
+        android:layout_marginTop="20dp"
+        android:id="@+id/desdev1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(icon designer)"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/desdev1"
+        android:layout_below="@id/creditstext"
+        android:fontFamily="@font/fn"
+        android:gravity="start"
+        android:layout_marginTop="30dp"
+        android:id="@+id/desdev111"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jehadmohammad@gmail.com"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/desdev1"
+        android:fontFamily="@font/fn"
+        android:gravity="start"
+        android:layout_marginTop="5dp"
+        android:id="@+id/desdevemail1"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Rahul V Hegde"
+        android:textColor="@color/colorWhite"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/desdev1"
+        android:fontFamily="@font/fn"
+        android:gravity="start"
+        android:layout_marginTop="50dp"
+        android:id="@+id/desdev2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(chat bot)"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/desdev2"
+        android:layout_below="@id/desdevemail1"
+        android:fontFamily="@font/fn"
+        android:gravity="start"
+        android:layout_marginTop="30dp"
+        android:id="@+id/desdev112"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rahulvhegde@gmail.com"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/desdev2"
+        android:fontFamily="@font/fn"
+        android:gravity="start"
+        android:layout_marginTop="5dp"
+        android:id="@+id/desdevemail2"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Rohan Sathish Acharya"
+        android:textColor="@color/colorWhite"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/desdev2"
+        android:fontFamily="@font/fn"
+        android:gravity="start"
+        android:layout_marginTop="50dp"
+        android:id="@+id/desdev3"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(backend support)"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/desdev3"
+        android:layout_below="@id/desdevemail2"
+        android:fontFamily="@font/fn"
+        android:gravity="start"
+        android:layout_marginTop="30dp"
+        android:id="@+id/desdev113"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rohansacharya@gmail.com"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/desdev3"
+        android:fontFamily="@font/fn"
+        android:gravity="start"
+        android:layout_marginTop="5dp"
+        android:id="@+id/desdevemail3"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4. Subramanya C Rao"
+        android:textColor="@color/colorWhite"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/desdev3"
+        android:fontFamily="@font/fn"
+        android:gravity="start"
+        android:layout_marginTop="50dp"
+        android:id="@+id/desdev4"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(backend support)"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/desdev4"
+        android:layout_below="@id/desdevemail3"
+        android:fontFamily="@font/fn"
+        android:gravity="start"
+        android:layout_marginTop="30dp"
+        android:id="@+id/desdev114"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="subburao4@gmail.com"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/desdev4"
+        android:fontFamily="@font/fn"
+        android:gravity="start"
+        android:layout_marginTop="5dp"
+        android:id="@+id/desdevemail4"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5. Sujith D"
+        android:textColor="@color/colorWhite"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/desdev4"
+        android:fontFamily="@font/fn"
+        android:gravity="start"
+        android:layout_marginTop="50dp"
+        android:id="@+id/desdev5"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(backend support)"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/desdev5"
+        android:layout_below="@id/desdevemail4"
+        android:fontFamily="@font/fn"
+        android:gravity="start"
+        android:layout_marginTop="30dp"
+        android:id="@+id/desdev115"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sujithd@gmail.com"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/desdev5"
+        android:fontFamily="@font/fn"
+        android:gravity="start"
+        android:layout_marginTop="5dp"
+        android:id="@+id/desdevemail5"/>
+
+
+
+</RelativeLayout>

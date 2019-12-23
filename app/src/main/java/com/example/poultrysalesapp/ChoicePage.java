@@ -138,6 +138,21 @@ public class ChoicePage extends AppCompatActivity {
             startActivity(intent);
         }
 
+
+        if (id == R.id.adminloginpage)
+        {
+//            Toast.makeText(ChoicePage.this, "Click on the icon to choose!", Toast.LENGTH_LONG).show();
+            openDialogueAdmin();
+        }
+
+
+        if (id == R.id.deliveryboylogin)
+        {
+            Toast.makeText(ChoicePage.this, "Login Page for Delivery boys", Toast.LENGTH_LONG).show();
+//            Intent intent = new Intent(ChoicePage.this,AboutUsPage.class);
+//            startActivity(intent);
+        }
+
         if (id == R.id.directtodeliverypage)
         {
 //            Toast.makeText(ChoicePage.this, "Check for the delivery", Toast.LENGTH_LONG).show();
@@ -145,6 +160,13 @@ public class ChoicePage extends AppCompatActivity {
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
+    }
+
+
+    private void openDialogueAdmin()
+    {
+        AdminInfoDialogue adminInfoDialogue = new AdminInfoDialogue();
+        adminInfoDialogue.show(getSupportFragmentManager(),"Admin Info Dialogue");
     }
 
 

@@ -17,7 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HelpAndTipsPage"></activity>
+        <activity android:name=".CreditsPage"></activity>
+        <activity android:name=".HelpAndTipsPage" />
         <activity android:name=".AppInfoPage" />
         <activity android:name=".AboutUsPage" />
         <activity android:name=".DeliveryPage" />

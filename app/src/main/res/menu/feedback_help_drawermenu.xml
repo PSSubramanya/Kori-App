@@ -39,4 +39,9 @@
         android:title="About Us"
         android:icon="@drawable/ic_people_black_24dp"/>
 
+    <item
+        android:id="@+id/codedevelopericon"
+        android:title="Credits"
+        android:icon="@drawable/ic_developer_mode_black_24dp"/>
+
 </menu>
