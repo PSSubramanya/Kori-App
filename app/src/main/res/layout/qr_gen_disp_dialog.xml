@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    cardview:cardCornerRadius="4dp"
+    android:id="@+id/breed_item_grid_id"
+    app:ignore="NamespaceTypo">
+
+
+    <!--<LinearLayout-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+
+    <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginLeft="115dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:src="@drawable/poultryicone"-->
+    <!--app:civ_border_color="#EEEEEE"-->
+    <!--app:civ_border_width="4dp"-->
+    <!--app:civ_shadow="true"-->
+    <!--app:civ_shadow_radius="10"-->
+    <!--android:id="@+id/circularimg1"-->
+    <!--app:civ_shadow_color="#8BC34A"/>-->
+
+    <!--</LinearLayout>-->
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:src="@drawable/poultryicone"-->
+        <!--app:civ_border_color="#000000"-->
+        <!--app:civ_border_width="1.5dp"-->
+        <!--app:civ_shadow="true"-->
+        <!--app:civ_shadow_radius="10"-->
+        <!--android:background="@color/colorWhite"-->
+        <!--android:id="@+id/irrod_img_id"-->
+        <!--app:civ_shadow_color="#8BC34A"/>-->
+        <ImageView
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            app:civ_border_color="#EEEEEE"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="10"
+            android:id="@+id/qrimggen"
+            app:civ_shadow_color="#8BC34A"/>
+
+
+        <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:src="@drawable/poultryicone"-->
+        <!--app:civ_border_color="#000000"-->
+        <!--app:civ_border_width="1.5dp"-->
+        <!--app:civ_shadow="true"-->
+        <!--app:civ_shadow_radius="10"-->
+        <!--android:id="@+id/irrod_img_id"-->
+        <!--app:civ_shadow_color="#8BC34A"/>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:text="QR Code"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:id="@+id/qrtitletext"
+            android:layout_below="@+id/qrimggen"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:background="@drawable/one_sided_border"
+            android:textColor="@color/greenishgreen"
+            android:id="@+id/userinfofrqr"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="40dp"
+            android:paddingTop="8dp"
+            android:layout_below="@+id/qrtitletext"
+            android:gravity="start"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

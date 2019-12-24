@@ -8,6 +8,7 @@ import android.Manifest;
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
@@ -17,17 +18,36 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.zxing.BarcodeFormat;
+import com.google.zxing.MultiFormatWriter;
+import com.google.zxing.WriterException;
+import com.google.zxing.common.BitMatrix;
+import com.journeyapps.barcodescanner.BarcodeEncoder;
 
 public class DeliveryPage extends AppCompatActivity {
 
     private static final int REQUEST_CALL = 1;
 
     Dialog dialog;
+    Dialog dialog1;
+//    Dialog dialog2;
+
+
+
     CheckBox deliverycheckBox;
     Button deliverydone;
-//    Dialog dialog1;
-//    Dialog dialog2;
+
+    private Button generateqr;
+    private Button cancelqr;
+
+
+    private TextView userinfofrqr;
+    private TextView qrtitletext;
+    private ImageView qrimggen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +92,75 @@ public class DeliveryPage extends AppCompatActivity {
         if (deliverycheckBox.isChecked())
         {
             dialog.show();
+
+            if (dialog.isShowing())
+            {
+                generateqr = dialog.findViewById(R.id.generateqr);
+                cancelqr = dialog.findViewById(R.id.cancelqr);
+
+
+                generateqr.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        dialog.dismiss();
+
+                        dialog1 = new Dialog(DeliveryPage.this);
+                        dialog1.setContentView(R.layout.qr_gen_disp_dialog);
+
+
+                        dialog1.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+                        dialog1.show();
+
+                        if (dialog1.isShowing())
+                        {
+                            userinfofrqr = dialog1.findViewById(R.id.userinfofrqr);
+                            qrimggen = dialog1.findViewById(R.id.qrimggen);
+
+
+                            String txt = "Name: P.S. Subramanya Bhat\nAddress: Shree Durga, 5-39/3,\n\t\t\t\t\t\t\t\to/p to P.H.C., Bondel,\n\t\t\t\t\t\t\t\tMangalore, 575008\nOrders: \t\tIrrod1\n\t\t\t\t\t\t\t\tIrrod2\n\t\t\t\t\t\t\t\tIrrod3\n\t\t\t\t\t\t\t\tIrrod4\nTotal Cost: Rs.6000";
+
+                            if (txt != null)
+                            {
+                                userinfofrqr.setText(txt);
+                                MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
+                                try
+                                {
+                                    BitMatrix bitMatrix = multiFormatWriter.encode(txt, BarcodeFormat.QR_CODE,500,500);
+                                    BarcodeEncoder barcodeEncoder = new BarcodeEncoder();
+                                    Bitmap bitmap = barcodeEncoder.createBitmap(bitMatrix);
+                                    qrimggen.setImageBitmap(bitmap);
+                                } catch (WriterException e)
+                                {
+                                    e.printStackTrace();
+                                }
+
+                            }
+                        }
+
+
+//                        String txt = etInput.getText().toString().trim();
+
+//                        String txt = "Name: P.S. Subramanya Bhat\nAddress: xyz\nOrders: \tIrrod1\n\tIrrod2\n\tIrrod3\n\tIrrod4\nTotal Cost: Rs.6000";
+//
+//                        if (txt != null)
+//                        {
+//                            MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
+//                            try
+//                            {
+//                                BitMatrix bitMatrix = multiFormatWriter.encode(txt, BarcodeFormat.QR_CODE,500,500);
+//                                BarcodeEncoder barcodeEncoder = new BarcodeEncoder();
+//                                Bitmap bitmap = barcodeEncoder.createBitmap(bitMatrix);
+//                                imageView.setImageBitmap(bitmap);
+//                            } catch (WriterException e)
+//                            {
+//                                e.printStackTrace();
+//                            }
+//
+//                        }
+                    }
+                });
+            }
         }
     }
 
@@ -96,6 +185,14 @@ public class DeliveryPage extends AppCompatActivity {
         if (id == R.id.calldelivery)
         {
             DialToKoriOffice2();
+//            Toast.makeText(DeliveryPage.this, "Call to Kori Office", Toast.LENGTH_SHORT).show();
+        }
+
+        if (id == R.id.qrcodescannerkori)
+        {
+//            DialToKoriOffice2();
+            Intent intent = new Intent(DeliveryPage.this,QRScannerKori.class);
+            startActivity(intent);
 //            Toast.makeText(DeliveryPage.this, "Call to Kori Office", Toast.LENGTH_SHORT).show();
         }
 

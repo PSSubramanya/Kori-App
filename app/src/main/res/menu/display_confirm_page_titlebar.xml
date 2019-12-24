@@ -31,4 +31,13 @@
     </item>
 
 
+
+    <item
+        android:id="@+id/qrcodescannerkori"
+        android:title="QR Code Scanner"
+        android:icon="@drawable/qrscannerkoric"
+        app:showAsAction="always">
+    </item>
+
+
 </menu>
