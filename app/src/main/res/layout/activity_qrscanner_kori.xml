@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,14 +7,19 @@
     android:background="@color/darkgrey"
     tools:context=".QRScannerKori">
 
-    <SurfaceView
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:id="@+id/camerapreview"
-        android:layout_marginTop="60dp"
-        android:layout_centerHorizontal="true"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darkgrey">
+        <SurfaceView
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:id="@+id/camerapreview"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/qr_code_reader_square"
+            android:layout_centerHorizontal="true"/>
 
-    <!--<TextView-->
+        <!--<TextView-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content"-->
         <!--android:id="@+id/textViewqr"-->
@@ -24,10 +29,10 @@
         <!--android:textSize="20dp"-->
         <!--android:gravity="center"/>-->
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/camerapreview">
+        <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/camerapreview">-->
 
         <TextView
             android:layout_width="match_parent"
@@ -41,9 +46,10 @@
             android:textColor="@color/colorWhite"
             android:fontFamily="@font/ffv"
             android:gravity="center"/>
-    </ScrollView>
+        <!--</ScrollView>-->
+    </RelativeLayout>
 
-</RelativeLayout>
+</ScrollView>
 
 <!--<?xml version="1.0" encoding="utf-8"?>-->
 <!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->

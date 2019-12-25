@@ -34,4 +34,5 @@
     <color name="colorWhite">#FFFFFF</color>
     <color name="greyishWhite">#F7F7F7</color>
     <color name="EmraldGreen">#046307</color>
+    <color name="qr_code_reader_square_color">#FFFFFFFF</color>
 </resources>
