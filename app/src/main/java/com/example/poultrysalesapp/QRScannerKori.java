@@ -4,14 +4,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
+import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.util.SparseArray;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
+import android.view.ViewTreeObserver;
+import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,10 +36,12 @@ public class QRScannerKori extends AppCompatActivity {
 //    private ZXingScannerView scannerView;
 
 
+    ObjectAnimator animator;
     SurfaceView surfaceView;
     CameraSource cameraSource;
     TextView textViewqr;
     BarcodeDetector barcodeDetector;
+    View scannerBar;
     private static final int REQUEST_CAMERA_PERMISSION = 201;
 
     @Override
@@ -43,8 +50,11 @@ public class QRScannerKori extends AppCompatActivity {
         setContentView(R.layout.activity_qrscanner_kori);
 
 
+//        surfaceView = (SurfaceView)findViewById(R.id.camerapreview);
+
         surfaceView = (SurfaceView)findViewById(R.id.camerapreview);
         textViewqr = (TextView)findViewById(R.id.textViewqr);
+        scannerBar = findViewById(R.id.scannerBar);
 
         barcodeDetector = new BarcodeDetector.Builder(this)
                 .setBarcodeFormats(Barcode.QR_CODE).build();
@@ -52,6 +62,50 @@ public class QRScannerKori extends AppCompatActivity {
 
         cameraSource = new CameraSource.Builder(this, barcodeDetector)
                 .setRequestedPreviewSize(640, 480).build();
+
+
+
+
+
+        animator = null;
+
+        ViewTreeObserver vto = surfaceView.getViewTreeObserver();
+        vto.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+
+                surfaceView.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+                if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
+                    surfaceView.getViewTreeObserver().
+                            removeGlobalOnLayoutListener(this);
+
+                } else {
+                    surfaceView.getViewTreeObserver().
+                            removeOnGlobalLayoutListener(this);
+                }
+
+                float destination = (float) (surfaceView.getY() +
+                        surfaceView.getHeight())- (float)40.0;
+//                float destination = (float) (surfaceView.getHeight());
+
+//                animator = ObjectAnimator.ofFloat(scannerBar, "translationY",
+//                        surfaceView.getY(),
+//                        destination);
+                animator = ObjectAnimator.ofFloat(scannerBar, "translationY",
+                        surfaceView.getY(),
+                        destination);
+
+                animator.setRepeatMode(ValueAnimator.REVERSE);
+                animator.setRepeatCount(ValueAnimator.INFINITE);
+                animator.setInterpolator(new AccelerateDecelerateInterpolator());
+                animator.setDuration(3360);
+                animator.start();
+
+            }
+        });
+
+
+
 
 
 

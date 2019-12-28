@@ -11,13 +11,46 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/darkgrey">
+
+        <View
+            android:id="@+id/scannerBar"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/Red" />
+
         <SurfaceView
             android:layout_width="240dp"
             android:layout_height="240dp"
             android:id="@+id/camerapreview"
             android:layout_marginTop="60dp"
             android:background="@drawable/qr_code_reader_square"
-            android:layout_centerHorizontal="true"/>
+            android:layout_centerHorizontal="true">
+
+
+            <!--<View-->
+                <!--android:id="@+id/scannerBar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="5dp"-->
+                <!--android:background="@color/Red" />-->
+        </SurfaceView>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="240dp"-->
+            <!--android:layout_height="240dp"-->
+            <!--android:id="@+id/camerapreview"-->
+            <!--android:layout_marginTop="60dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:background="@drawable/qr_code_reader_square"-->
+            <!--android:layout_centerHorizontal="true">-->
+
+
+            <!--<View-->
+                <!--android:id="@+id/scannerBar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="5dp"-->
+                <!--android:background="@color/Red" />-->
+        <!--</LinearLayout>-->
 
         <!--<TextView-->
         <!--android:layout_width="match_parent"-->
