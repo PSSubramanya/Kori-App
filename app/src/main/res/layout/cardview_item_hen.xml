@@ -51,12 +51,23 @@
             <!--android:background="@color/colorWhite"-->
             <!--android:id="@+id/irrod_img_id"-->
             <!--app:civ_shadow_color="#8BC34A"/>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_marginHorizontal="120dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:id="@+id/multiselectcheck"-->
+            <!--android:src="@drawable/ic_check_black_24dp"/>-->
+
+
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
             android:src="@drawable/poultryicone"
             app:civ_border_color="#EEEEEE"
             app:civ_border_width="4dp"

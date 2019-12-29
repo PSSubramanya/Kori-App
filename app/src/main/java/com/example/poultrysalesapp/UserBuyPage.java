@@ -8,10 +8,12 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.Manifest;
+import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
@@ -49,6 +51,9 @@ public class UserBuyPage extends AppCompatActivity implements NavigationView.OnN
     private FirebaseFirestore firestore;
     String userID;
 
+
+    Dialog dialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,6 +76,13 @@ public class UserBuyPage extends AppCompatActivity implements NavigationView.OnN
                 startActivity(intent);
             }
         });
+
+
+        dialog = new Dialog(UserBuyPage.this);
+        dialog.setContentView(R.layout.set_location);
+
+
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
 
 //        final String drawerstringname = dialogue_breedname_tv.getText().toString().trim();
@@ -207,7 +219,8 @@ public class UserBuyPage extends AppCompatActivity implements NavigationView.OnN
 
         if (id == R.id.userLocation)
         {
-            Toast.makeText(UserBuyPage.this, "User Location", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(UserBuyPage.this, "User Location", Toast.LENGTH_SHORT).show();
+            dialog.show();
         }
 
         if (id == R.id.calldelivery)

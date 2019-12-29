@@ -7,7 +7,7 @@
     <item
         android:id="@+id/userLocation"
         android:title="Set Location"
-        android:icon="@drawable/ic_location_on_black_24dp"
+        android:icon="@drawable/ic_location_on_white_24dp"
         app:showAsAction="always">
     </item>
 

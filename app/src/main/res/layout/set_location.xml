@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="top">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/latlongsetid"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:text="Lat and Long"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:textColor="@color/darkgrey"
+                android:background="@drawable/borderlocset"
+                android:textSize="15dp"/>
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-40dp"
+                android:src="@drawable/latlongimg"/>
+
+
+            <EditText
+                android:id="@+id/settingaddress"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:text="Address"
+                android:paddingLeft="10dp"
+                android:textColor="@color/darkgrey"
+                android:background="@drawable/borderlocset"
+                android:textSize="15dp"/>
+
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-50dp"
+                android:src="@drawable/ic_location_on_black_24dp"/>
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/setlocaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/YellowishOrange"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="120dp"
+            android:paddingRight="115dp"
+            android:text="SET" />
+
+
+
+        <Button
+            android:id="@+id/canceladdress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/darkgrey"
+            android:paddingLeft="120dp"
+            android:paddingRight="115dp"
+            android:text="CANCEL"
+            android:textColor="@color/colorWhite" />
+
+
+    </LinearLayout>
+
+
+    <!--<ImageView-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="120dp"-->
+    <!--android:src="@drawable/poultryopenerpage"-->
+    <!--android:padding="10dp"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:id="@+id/dialoguebreedhenimg"/>-->
+
+
+    <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="120dp"-->
+    <!--android:src="@drawable/poultryopenerpage"-->
+    <!--android:padding="10dp"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:id="@+id/dialoguebreedhenimg"-->
+    <!--app:civ_border_color="#000000"-->
+    <!--app:civ_border_width="1.5dp"-->
+    <!--app:civ_shadow="true"-->
+    <!--app:civ_shadow_radius="10"-->
+    <!--app:civ_shadow_color="#8BC34A"/>-->
+
+
+
+</RelativeLayout>

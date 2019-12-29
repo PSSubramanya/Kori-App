@@ -52,6 +52,7 @@ public class RecyclerViewAdapterGrid extends RecyclerView.Adapter<RecyclerViewAd
     private TextView logintext;
     private TextView signuptext;
     private ImageView wishlistbtn;
+//    private ImageView multiselectcheck;
 
     public RecyclerViewAdapterGrid(Context mContext1, List<IrrodGrid> mData1) {
         this.mContext1 = mContext1;
@@ -123,6 +124,7 @@ public class RecyclerViewAdapterGrid extends RecyclerView.Adapter<RecyclerViewAd
 
 
 
+
 //        Animation animation1 = AnimationUtils.loadAnimation(mContext,R.anim.slidedown);
 //        v.startAnimation(animation);
 
@@ -137,6 +139,15 @@ public class RecyclerViewAdapterGrid extends RecyclerView.Adapter<RecyclerViewAd
         holder.tv_Prices1.setText(mData1.get(position).getPrice1());
         holder.tv_name1.setText(mData1.get(position).getBreedName1());
         holder.thumb1.setImageResource(mData1.get(position).getThumbnail1());
+
+
+//        holder.breed_item_grid_id.setOnLongClickListener(new View.OnLongClickListener() {
+//            @Override
+//            public boolean onLongClick(View view) {
+//
+////                return false;
+//            }
+//        });
 
         holder.breed_item_grid_id.setOnClickListener(new View.OnClickListener() {
             @Override
