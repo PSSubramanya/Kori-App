@@ -21,6 +21,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -35,11 +36,20 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 
 import javax.annotation.Nullable;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class UserBuyPage extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private static final int REQUEST_CALL = 1;
     private DrawerLayout mdrawerLayout;
     private ActionBarDrawerToggle mToggle;
+
+//    private TextView settingaddress;
+//    private TextView canceladdress;
+
+    private ImageView sharelocationicon;
+
+
     TextView pt2, pt3, pt4, pt5, pt6;
     TextView displayhenname, displayhencost;
     TextView drawerusername, draweruseremailid;
@@ -221,6 +231,41 @@ public class UserBuyPage extends AppCompatActivity implements NavigationView.OnN
         {
 //            Toast.makeText(UserBuyPage.this, "User Location", Toast.LENGTH_SHORT).show();
             dialog.show();
+            if (dialog.isShowing())
+            {
+//                Uri gmmIntentUri = Uri.parse("geo:37.7749,-122.4194");
+//                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+//                mapIntent.setPackage("com.google.android.apps.maps");
+//                if (mapIntent.resolveActivity(getPackageManager()) != null) {
+//                    startActivity(mapIntent);
+//                }
+//                settingaddress = dialog.findViewById(R.id.settingaddress);
+//                settingaddress.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+////                        Uri gmmIntentUri = Uri.parse("geo:37.7749,-122.4194");
+//                        Uri gmmIntentUri = Uri.parse("geo:12.9258,74.8770");
+//                        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+//                        mapIntent.setPackage("com.google.android.apps.maps");
+//                        if (mapIntent.resolveActivity(getPackageManager()) != null) {
+//                            startActivity(mapIntent);
+//                        }
+//                    }
+//                });
+
+                sharelocationicon = dialog.findViewById(R.id.sharelocationicon);
+                sharelocationicon.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Uri gmmIntentUri = Uri.parse("geo:12.9258,74.8770");
+                        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                        mapIntent.setPackage("com.google.android.apps.maps");
+                        if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                            startActivity(mapIntent);
+                        }
+                    }
+                });
+            }
         }
 
         if (id == R.id.calldelivery)

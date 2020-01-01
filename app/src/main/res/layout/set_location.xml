@@ -15,55 +15,82 @@
 
 
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <EditText
-                android:id="@+id/latlongsetid"
-                android:layout_width="250dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="20dp"
-                android:text="Lat and Long"
-                android:layout_gravity="center"
-                android:paddingLeft="10dp"
-                android:textColor="@color/darkgrey"
-                android:background="@drawable/borderlocset"
-                android:textSize="15dp"/>
+            <!--<TextView-->
+                <!--android:id="@+id/latlongsetid"-->
+                <!--android:layout_width="250dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:text="Lat and Long"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:textColor="@color/darkgrey"-->
+                <!--android:background="@drawable/borderlocset"-->
+                <!--android:textSize="15dp"/>-->
+
+
+            <!--<ImageView-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginTop="-40dp"-->
+                <!--android:id="@+id/laticon"-->
+                <!--android:src="@drawable/latlongimg"/>-->
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/settingaddress"-->
+                <!--android:layout_width="250dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:hint="Address"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:paddingBottom="10dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:textColor="@color/darkgrey"-->
+                <!--android:background="@drawable/borderlocset"-->
+                <!--android:textSize="15dp"/>-->
+
+
+
+            <!--<ImageView-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginTop="-50dp"-->
+                <!--android:id="@+id/locadicon"-->
+                <!--android:src="@drawable/ic_location_on_black_24dp"/>-->
+
 
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="-40dp"
-                android:src="@drawable/latlongimg"/>
-
-
-            <EditText
-                android:id="@+id/settingaddress"
-                android:layout_width="250dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="30dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="10dp"
-                android:text="Address"
-                android:paddingLeft="10dp"
-                android:textColor="@color/darkgrey"
-                android:background="@drawable/borderlocset"
-                android:textSize="15dp"/>
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:id="@+id/sharelocationicon"
+                android:src="@drawable/locationcircleicon"
+                android:layout_marginBottom="10dp"/>
 
 
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="-50dp"
-                android:src="@drawable/ic_location_on_black_24dp"/>
-        </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share Location"
+                android:layout_below="@+id/sharelocationicon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"/>
+        </RelativeLayout>
 
 
 
